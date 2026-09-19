@@ -10,18 +10,18 @@
 
   <style>
     :root {
-      --bg: #070907;
-      --bg-side: #0b0f0b;
-      --card: #121712;
-      --card-inner: #1a221b;
-      --border: #222c23;
-      --gold: #d4af37;
-      --gold-glow: #f5d77f;
+      --bg: #000000;
+      --bg-side: #0a0a0a;
+      --card: #121212;
+      --card-inner: #1a1a1a;
+      --border: #262626;
+      --gold: #ffffff;
+      --gold-glow: #ffffff;
       --green: #22c55e;
       --red: #ef4444;
       --blue: #38bdf8;
-      --text: #f1f5f1;
-      --muted: #8d9e8d;
+      --text: #ffffff;
+      --muted: #a6a6a6;
       --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
     }
 
@@ -55,7 +55,7 @@
     }
     .side-logo-g {
       width: 36px; height: 36px;
-      background: linear-gradient(135deg, var(--gold), #f0c040);
+      background: linear-gradient(135deg, var(--gold), #ffffff);
       color: #000;
       font-weight: 900;
       font-size: 18px;
@@ -63,7 +63,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 0 16px rgba(212,175,55,0.3);
+      box-shadow: 0 0 16px rgba(255,255,255,0.3);
     }
     .side-brand-title b { font-size: 17px; letter-spacing: -0.5px; display: block; }
     .side-brand-title span { font-size: 10px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; }
@@ -95,7 +95,7 @@
     .nav-item:hover { color: #fff; background: rgba(255,255,255,0.04); }
     .nav-item.active {
       color: #000;
-      background: linear-gradient(135deg, var(--gold), #f0c040);
+      background: linear-gradient(135deg, var(--gold), #ffffff);
       font-weight: 700;
     }
     .nav-badge {
@@ -242,7 +242,7 @@
       padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight: 700;
     }
     .badge.green { background: rgba(34,197,94,0.15); color: var(--green); }
-    .badge.gold { background: rgba(212,175,55,0.15); color: var(--gold); }
+    .badge.gold { background: rgba(255,255,255,0.15); color: var(--gold); }
     .badge.red { background: rgba(239,68,68,0.15); color: var(--red); }
     .badge.blue { background: rgba(56,189,248,0.15); color: var(--blue); }
 
@@ -303,8 +303,8 @@
       border-bottom-left-radius: 2px;
     }
     .msg-bubble.out {
-      background: linear-gradient(135deg, rgba(212,175,55,0.2), rgba(212,175,55,0.1));
-      border: 1px solid rgba(212,175,55,0.3);
+      background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+      border: 1px solid rgba(255,255,255,0.3);
       color: #fff;
       align-self: flex-end;
       border-bottom-right-radius: 2px;
@@ -435,8 +435,8 @@
         width: 38px;
         height: 38px;
         border-radius: 8px;
-        background: rgba(212,175,55,0.15);
-        border: 1px solid rgba(212,175,55,0.35);
+        background: rgba(255,255,255,0.15);
+        border: 1px solid rgba(255,255,255,0.35);
         color: var(--gold);
         font-size: 20px;
         cursor: pointer;
@@ -569,7 +569,7 @@
       </button>
       <button class="nav-item" onclick="switchNav('disputes')">
         <span>⚖️</span> Corridas & Disputas
-        <span class="nav-badge" style="background:rgba(212,175,55,0.2);color:var(--gold);">2</span>
+        <span class="nav-badge" style="background:rgba(255,255,255,0.2);color:var(--gold);">2</span>
       </button>
       <button class="nav-item" onclick="switchNav('sos')">
         <span>🚨</span> Monitor SOS (5km)
@@ -1056,8 +1056,8 @@
           </div>
 
           <!-- Coluna 3: Copiloto do Administrador (Central IA Assistant) -->
-          <div class="ai-box" style="border-color:rgba(212,175,55,0.3);">
-            <div class="ai-box-head" style="background:rgba(212,175,55,0.08);">
+          <div class="ai-box" style="border-color:rgba(255,255,255,0.3);">
+            <div class="ai-box-head" style="background:rgba(255,255,255,0.08);">
               <b style="color:var(--gold);"><span>🧠</span> Copiloto Central (Admin IA)</b>
               <span class="badge gold">Operador HQ</span>
             </div>

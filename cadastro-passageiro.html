@@ -4,9 +4,9 @@
   <title>GIRO — Cadastro Passageiro</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <meta name="theme-color" content="#070907">
+  <meta name="theme-color" content="#000000">
   <style>
-    :root{--bg:#070907;--bg2:#0f1410;--bg3:#1a211b;--gold:#d4af37;--gold2:#f0c040;--green:#22c55e;--green2:#16a34a;--red:#ef4444;--text:#f1f5f1;--muted:#8d9e8d;--border:rgba(212,175,55,0.18);--card:rgba(255,255,255,0.04);--radius:16px;--shadow:0 4px 24px rgba(0,0,0,0.6);}
+    :root{--bg:#000000;--bg2:#0f1410;--bg3:#1a211b;--gold:#ffffff;--gold2:#ffffff;--green:#22c55e;--green2:#16a34a;--red:#ef4444;--text:#f1f5f1;--muted:#8d9e8d;--border:rgba(255,255,255,0.18);--card:rgba(255,255,255,0.04);--radius:16px;--shadow:0 4px 24px rgba(0,0,0,0.6);}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
     html,body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;min-height:100vh;-webkit-font-smoothing:antialiased;}
     a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
@@ -51,8 +51,8 @@
     .btn-sm{padding:10px 16px;font-size:13px;width:auto;border-radius:8px;}
     .nav-btns{display:flex;gap:10px;margin-top:20px;}
     .nav-btns .btn{margin-top:0;}
-    .upload-box{border:2px dashed rgba(212,175,55,.3);border-radius:12px;padding:18px 12px;text-align:center;cursor:pointer;transition:border-color .2s,background .2s;position:relative;}
-    .upload-box:hover,.upload-box.drag{border-color:var(--gold);background:rgba(212,175,55,.04);}
+    .upload-box{border:2px dashed rgba(255,255,255,.3);border-radius:12px;padding:18px 12px;text-align:center;cursor:pointer;transition:border-color .2s,background .2s;position:relative;}
+    .upload-box:hover,.upload-box.drag{border-color:var(--gold);background:rgba(255,255,255,.04);}
     .upload-box input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;}
     .upload-box .up-icon{font-size:28px;margin-bottom:6px;}
     .upload-box .up-label{font-size:13px;color:var(--muted);}
@@ -68,14 +68,14 @@
     .alert{padding:12px 14px;border-radius:10px;font-size:13px;margin-bottom:16px;display:none;}
     .alert.err{background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.3);color:#fca5a5;}
     .alert.suc{background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.3);color:#86efac;}
-    .alert.info{background:rgba(212,175,55,.10);border:1px solid rgba(212,175,55,.3);color:var(--gold2);}
+    .alert.info{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.3);color:var(--gold2);}
     .step-pane{display:none;}
     .step-pane.active{display:block;}
     .success-screen{text-align:center;padding:32px 0;}
     .success-screen .big-icon{font-size:64px;margin-bottom:16px;}
     .success-screen h2{font-size:22px;font-weight:800;margin-bottom:10px;}
     .success-screen p{font-size:14px;color:var(--muted);line-height:1.6;}
-    .success-screen .badge-pending{display:inline-block;margin-top:16px;padding:8px 18px;border-radius:20px;background:rgba(212,175,55,.12);border:1px solid var(--border);color:var(--gold);font-size:13px;font-weight:600;}
+    .success-screen .badge-pending{display:inline-block;margin-top:16px;padding:8px 18px;border-radius:20px;background:rgba(255,255,255,.12);border:1px solid var(--border);color:var(--gold);font-size:13px;font-weight:600;}
     .resend-row{text-align:center;margin-top:16px;font-size:13px;color:var(--muted);}
     .resend-btn{color:var(--gold);font-weight:600;cursor:pointer;background:none;border:none;font-size:13px;}
     .resend-btn:disabled{color:var(--muted);cursor:default;}
@@ -93,8 +93,8 @@
     .pill-skip:hover{border-color:var(--gold);color:var(--gold);}
     .veh-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
     .veh-btn{padding:10px 8px;border-radius:8px;border:1px solid rgba(255,255,255,.08);background:var(--bg3);color:var(--text);font-size:13px;cursor:pointer;transition:border-color .2s;}
-    .veh-btn.selected{border-color:var(--gold);background:rgba(212,175,55,.08);color:var(--gold);}
-    .kyc-info{background:rgba(212,175,55,.07);border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:16px;font-size:12px;color:var(--gold2);line-height:1.6;}
+    .veh-btn.selected{border-color:var(--gold);background:rgba(255,255,255,.08);color:var(--gold);}
+    .kyc-info{background:rgba(255,255,255,.07);border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:16px;font-size:12px;color:var(--gold2);line-height:1.6;}
     .doc-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
     @media(max-width:380px){.doc-grid{grid-template-columns:1fr;}}
     .earnings-box{background:var(--bg3);border-radius:12px;padding:16px;margin-bottom:18px;text-align:center;}
@@ -114,7 +114,7 @@
       display: flex;
       flex-direction: column;
       padding: 0;
-      background: #070907;
+      background: #000000;
       align-items: stretch !important;
       justify-content: flex-start !important;
     }
@@ -141,7 +141,7 @@
     /* Step dots (bolinhas) */
     .step-dot-row { display:flex; gap:8px; justify-content:center; padding:16px 0 8px; }
     .step-dot-circle { color: #333; font-size: 14px; transition: color .2s; }
-    .step-dot-circle.active { color: #d4af37; }
+    .step-dot-circle.active { color: #ffffff; }
     .step-dot-circle.done { color: #22c55e; }
 
     /* Active state — ÚNICA animação permitida */
@@ -162,7 +162,7 @@
 <body>
 <div class="auth-wrapper">
   <div style="padding: calc(env(safe-area-inset-top,0px) + 24px) 20px 12px; text-align:center;">
-    <div style="font-size:38px;font-weight:900;color:#d4af37;letter-spacing:-2px;line-height:1;">GIRO</div>
+    <div style="font-size:38px;font-weight:900;color:#ffffff;letter-spacing:-2px;line-height:1;">GIRO</div>
     <div style="font-size:10px;letter-spacing:4px;color:#8d9e8d;text-transform:uppercase;margin-top:5px;">Novo Passageiro · Angola</div>
   </div>
 
@@ -325,12 +325,12 @@ const GiroAuth={
     if(s){
       const initials=(s.nome||s.phone||'?')[0].toUpperCase();
       el.innerHTML=`<div style="display:flex;align-items:center;gap:8px;">
-        <div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#d4af37,#f0c040);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;color:#000;">${initials}</div>
+        <div style="width:32px;height:32px;border-radius:50%;background:#ffffff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;color:#000;">${initials}</div>
         <div style="line-height:1.2;"><div style="font-size:13px;font-weight:700;color:#f1f5f1;">${s.nome||s.phone}</div><div style="font-size:10px;color:#8d9e8d;text-transform:uppercase;">${s.role==='motorista'?'🚗 Motorista':'🧑 Passageiro'}</div></div>
         <button onclick="GiroAuth.logout()" style="margin-left:4px;background:rgba(239,68,68,.15);border:1px solid rgba(239,68,68,.3);border-radius:8px;padding:5px 10px;color:#fca5a5;font-size:12px;cursor:pointer;">Sair</button>
       </div>`;
     }else{
-      el.innerHTML='<a href="login.html" style="text-decoration:none;padding:7px 14px;border-radius:20px;background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.3);color:#d4af37;font-size:13px;font-weight:700;">&#128100; Entrar</a>';
+      el.innerHTML='<a href="login.html" style="text-decoration:none;padding:7px 14px;border-radius:20px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);color:#ffffff;font-size:13px;font-weight:700;">&#128100; Entrar</a>';
     }
   },
   logout(){this.clear();window.location.href='login.html';}

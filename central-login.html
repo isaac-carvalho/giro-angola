@@ -4,21 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>GIRO Central 24h — Autenticação de Operador Táctico</title>
-  <meta name="theme-color" content="#070907">
+  <meta name="theme-color" content="#000000">
   <link rel="icon" type="image/x-icon" href="./favicon.ico">
 
   <style>
     :root {
-      --bg: #070907;
-      --card-bg: #0e130f;
-      --card-inner: #151c16;
-      --gold: #d4af37;
-      --gold-grad: linear-gradient(135deg, #d4af37, #f0c040);
+      --bg: #000000;
+      --card-bg: #121212;
+      --card-inner: #1a1a1a;
+      --gold: #ffffff;
+      --gold-grad: linear-gradient(135deg, #ffffff, #e2e2e2);
       --green: #22c55e;
       --red: #ef4444;
-      --border: rgba(212, 175, 55, 0.22);
-      --text: #f1f5f1;
-      --muted: #8d9e8d;
+      --border: #262626;
+      --text: #ffffff;
+      --muted: #a6a6a6;
     }
 
     * {
@@ -48,7 +48,7 @@
       position: absolute;
       inset: 0;
       background-image: 
-        radial-gradient(circle at center, rgba(212, 175, 55, 0.08) 0%, transparent 65%),
+        radial-gradient(circle at center, rgba(255, 255, 255, 0.08) 0%, transparent 65%),
         linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
       background-size: 100% 100%, 36px 36px, 36px 36px;
@@ -79,14 +79,14 @@
       width: 62px;
       height: 62px;
       border-radius: 50%;
-      background: rgba(212, 175, 55, 0.12);
+      background: rgba(255, 255, 255, 0.12);
       border: 2px solid var(--gold);
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 0 auto 14px;
       font-size: 26px;
-      box-shadow: 0 0 24px rgba(212, 175, 55, 0.25);
+      box-shadow: 0 0 24px rgba(255, 255, 255, 0.25);
     }
 
     .brand-title {
@@ -157,7 +157,7 @@
 
     .form-control:focus {
       border-color: var(--gold);
-      box-shadow: 0 0 12px rgba(212, 175, 55, 0.2);
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
     }
 
     .pw-wrap {
@@ -197,7 +197,7 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
-      box-shadow: 0 8px 24px rgba(212, 175, 55, 0.35);
+      box-shadow: 0 8px 24px rgba(255, 255, 255, 0.35);
       margin-top: 8px;
     }
 
@@ -311,7 +311,7 @@
         🔒 <strong>Acesso Restrito:</strong> Não há auto-cadastro nesta página. Credenciais emitidas pelo Administrador no Painel Master.
       </p>
       <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.06);display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
-        <button type="button" onclick="quickFill('isaac','181818')" style="background:rgba(212,175,55,0.15);border:1px solid rgba(212,175,55,0.4);color:var(--gold);padding:6px 12px;border-radius:6px;font-size:11px;font-weight:700;cursor:pointer;">🔑 Testar como Dono (isaac / 181818)</button>
+        <button type="button" onclick="quickFill('isaac','181818')" style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.4);color:var(--gold);padding:6px 12px;border-radius:6px;font-size:11px;font-weight:700;cursor:pointer;">🔑 Testar como Dono (isaac / 181818)</button>
         <button type="button" onclick="quickFill('operador1','giro2026central')" style="background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.4);color:var(--green);padding:6px 12px;border-radius:6px;font-size:11px;font-weight:700;cursor:pointer;">👤 Testar como Operador</button>
       </div>
     </div>

@@ -288,7 +288,7 @@
       width: 84px;
       height: 84px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #d4af37 0%, #f0c040 50%, #b89320 100%);
+      background: linear-gradient(135deg, #ffffff 0%, #e2e2e2 100%);
       border: 4px solid #ffffff;
       color: #000000;
       font-size: 22px;
@@ -297,7 +297,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 8px 28px rgba(212, 175, 55, 0.45);
+      box-shadow: 0 8px 28px rgba(255, 255, 255, 0.45);
       cursor: pointer;
       transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
@@ -318,7 +318,7 @@
       left: -10px;
       right: -10px;
       bottom: -10px;
-      border: 2px solid #d4af37;
+      border: 2px solid #ffffff;
       border-radius: 50%;
       opacity: 0;
       pointer-events: none;
@@ -791,7 +791,7 @@
 <body>
 
 <div id="giro-splash" style="position:fixed;inset:0;background:#070907;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity 0.2s ease;">
-  <div style="font-size:48px;font-weight:900;color:#d4af37;letter-spacing:-2px;line-height:1;">GIRO</div>
+  <div style="font-size:48px;font-weight:900;color:#ffffff;letter-spacing:-2px;line-height:1;">GIRO</div>
   <div style="font-size:11px;letter-spacing:4px;color:#8d9e8d;text-transform:uppercase;margin-top:6px;">Motorista Parceiro · Angola</div>
 </div>
 
@@ -1349,12 +1349,12 @@ const GiroAuth={
     if(s){
       const initials=(s.nome||s.phone||'?')[0].toUpperCase();
       el.innerHTML=`<div style="display:flex;align-items:center;gap:8px;">
-        <div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#d4af37,#f0c040);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;color:#000;">${initials}</div>
+        <div style="width:32px;height:32px;border-radius:50%;background:#ffffff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;color:#000;">${initials}</div>
         <div style="line-height:1.2;"><div style="font-size:13px;font-weight:700;color:#f1f5f1;">${s.nome||s.phone}</div><div style="font-size:10px;color:#8d9e8d;text-transform:uppercase;">${s.role==='motorista'?'🚗 Motorista':'🧑 Passageiro'}</div></div>
         <button onclick="GiroAuth.logout()" style="margin-left:4px;background:rgba(239,68,68,.15);border:1px solid rgba(239,68,68,.3);border-radius:8px;padding:5px 10px;color:#fca5a5;font-size:12px;cursor:pointer;">Sair</button>
       </div>`;
     }else{
-      el.innerHTML='<a href="login.html" style="text-decoration:none;padding:7px 14px;border-radius:20px;background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.3);color:#d4af37;font-size:13px;font-weight:700;">&#128100; Entrar</a>';
+      el.innerHTML='<a href="login.html" style="text-decoration:none;padding:7px 14px;border-radius:20px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);color:#ffffff;font-size:13px;font-weight:700;">&#128100; Entrar</a>';
     }
   },
   logout(){this.clear();window.location.href='login.html';}
@@ -1413,9 +1413,9 @@ document.addEventListener('DOMContentLoaded',function(){
     </div>
 
     <!-- Desafio 30K Bónus -->
-    <div style="background:rgba(212,175,55,0.08);border:1px solid rgba(212,175,55,0.3);border-radius:14px;padding:16px;margin-bottom:14px;">
+    <div style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.3);border-radius:14px;padding:16px;margin-bottom:14px;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
-        <b style="font-size:13px;color:#d4af37;">🎯 Desafio Diário 30K</b>
+        <b style="font-size:13px;color:#ffffff;">🎯 Desafio Diário 30K</b>
         <span style="font-size:11px;background:#d4af37;color:#000;padding:2px 6px;border-radius:4px;font-weight:800;">+1.500 Kz BÓNUS</span>
       </div>
       <p style="font-size:12px;color:#a6a6a6;margin-bottom:8px;">Fature 30.000 Kz hoje e receba +1.500 Kz de bónus direto na sua conta!</p>
@@ -1434,7 +1434,7 @@ document.addEventListener('DOMContentLoaded',function(){
     <h2 style="font-size:20px;font-weight:800;color:#fff;margin-bottom:14px;">Perfil do Motorista</h2>
 
     <div style="background:#121612;border:1px solid #262626;border-radius:14px;padding:16px;margin-bottom:14px;display:flex;align-items:center;gap:14px;">
-      <div style="width:50px;height:50px;border-radius:50%;background:linear-gradient(135deg,#d4af37,#f0c040);display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:900;color:#000;">D</div>
+      <div style="width:50px;height:50px;border-radius:50%;background:#ffffff;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:900;color:#000;">D</div>
       <div>
         <div style="font-size:16px;font-weight:700;color:#fff;">Domingos Manuel</div>
         <div style="font-size:12px;color:#8d9e8d;">+244 923 456 789</div>
@@ -1446,7 +1446,7 @@ document.addEventListener('DOMContentLoaded',function(){
     <div style="background:#121612;border:1px solid #262626;border-radius:14px;padding:16px;margin-bottom:14px;">
       <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:10px;">Viatura Registada</div>
       <div style="font-size:13px;color:#fff;font-weight:600;">Toyota Corolla (Cinzento)</div>
-      <div style="font-size:12px;color:#d4af37;margin-top:2px;">Matrícula: LD-23-45-AA</div>
+      <div style="font-size:12px;color:#ffffff;margin-top:2px;">Matrícula: LD-23-45-AA</div>
       <div style="font-size:11px;color:#8d9e8d;margin-top:4px;">Seguro & Inspecção válidos até Nov/2026</div>
     </div>
 
@@ -1473,7 +1473,7 @@ document.addEventListener('DOMContentLoaded',function(){
   </section>
 
 <nav id="bottom-tab-bar" style="position:fixed;bottom:0;left:0;right:0;height:54px;background:#111;border-top:1px solid #262626;display:flex;align-items:stretch;z-index:200;padding-bottom:env(safe-area-inset-bottom,0px);">
-  <button class="tab-btn active" data-tab="home" onclick="driverSwitchTab('home')" style="flex:1;background:none;border:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;cursor:pointer;color:#d4af37;font-size:20px;padding:0;">&#127968;<span style="font-size:10px;font-weight:600;">In&#237;cio</span></button>
+  <button class="tab-btn active" data-tab="home" onclick="driverSwitchTab('home')" style="flex:1;background:none;border:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;cursor:pointer;color:#ffffff;font-size:20px;padding:0;">&#127968;<span style="font-size:10px;font-weight:600;">In&#237;cio</span></button>
   <button class="tab-btn" data-tab="trips" onclick="driverSwitchTab('trips')" style="flex:1;background:none;border:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;cursor:pointer;color:#666;font-size:20px;padding:0;">&#128204;<span style="font-size:10px;font-weight:600;">Viagens</span></button>
   <button class="tab-btn" data-tab="earnings" onclick="driverSwitchTab('earnings')" style="flex:1;background:none;border:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;cursor:pointer;color:#666;font-size:20px;padding:0;">&#128176;<span style="font-size:10px;font-weight:600;">Ganhos</span></button>
   <button class="tab-btn" data-tab="profile" onclick="driverSwitchTab('profile')" style="flex:1;background:none;border:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;cursor:pointer;color:#666;font-size:20px;padding:0;">&#128100;<span style="font-size:10px;font-weight:600;">Perfil</span></button>

@@ -8,16 +8,19 @@
 
   <style>
     :root {
-      --bg: #070907;
-      --bg-card: #0e140f;
-      --bg-card2: #162017;
-      --border: #233024;
-      --gold: #d4af37;
-      --gold-glow: #f5d77f;
-      --green: #22c55e;
-      --blue: #38bdf8;
-      --text: #f1f5f1;
-      --muted: #8d9e8d;
+      --bg: #000000;
+      --bg-card: #121212;
+      --bg-card2: #1a1a1a;
+      --border: #262626;
+      --gold: #ffffff;
+      --gold-glow: #ffffff;
+      --uber-black: #000000;
+      --uber-white: #ffffff;
+      --uber-blue: #276ef1;
+      --green: #05a357;
+      --blue: #276ef1;
+      --text: #ffffff;
+      --muted: #a6a6a6;
       --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
     }
 
@@ -34,7 +37,7 @@
     /* ── Layout & Header ── */
     header {
       position: sticky; top: 0; z-index: 100;
-      background: rgba(7, 9, 7, 0.95);
+      background: rgba(0, 0, 0, 0.95);
       border-bottom: 1px solid var(--border);
       padding: 16px 28px;
       display: flex; justify-content: space-between; align-items: center;
@@ -42,17 +45,17 @@
     .brand-group { display: flex; align-items: center; gap: 12px; }
     .logo-badge {
       width: 40px; height: 40px; border-radius: 10px;
-      background: linear-gradient(135deg, var(--gold), #f0c040);
+      background: #ffffff; color: #000000;
       color: #000; font-weight: 900; font-size: 20px;
       display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 0 20px rgba(212,175,55,0.35);
+      box-shadow: 0 2px 12px rgba(255,255,255,0.15);
     }
     .brand-text b { font-size: 20px; font-weight: 900; letter-spacing: -0.5px; display: block; line-height: 1; }
-    .brand-text span { font-size: 10px; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; font-weight: 700; }
+    .brand-text span { font-size: 10px; color: #ffffff; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; }
 
     .header-cta { display: flex; gap: 12px; align-items: center; }
     .btn-gold {
-      background: linear-gradient(135deg, var(--gold), #f0c040);
+      background: #ffffff; color: #000000;
       color: #000; font-weight: 800; font-size: 13px;
       padding: 10px 22px; border-radius: 8px; text-decoration: none;
       border: none; cursor: pointer; transition: transform 0.15s ease, opacity 0.15s ease;
@@ -76,8 +79,8 @@
     .hero-pill {
       display: inline-flex; align-items: center; gap: 8px;
       padding: 6px 16px; border-radius: 20px;
-      background: rgba(212,175,55,0.12); border: 1px solid rgba(212,175,55,0.3);
-      color: var(--gold); font-size: 12px; font-weight: 700;
+      background: #1a1a1a; border: 1px solid #333;
+      color: #ffffff; font-size: 12px; font-weight: 700;
       text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;
     }
     .hero h1 {
@@ -85,7 +88,7 @@
       letter-spacing: -1px; margin-bottom: 18px; max-width: 960px; margin-left: auto; margin-right: auto;
     }
     .hero h1 span {
-      background: linear-gradient(135deg, #fff 30%, var(--gold) 100%);
+      background: linear-gradient(135deg, #ffffff 40%, #a6a6a6 100%);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     }
     .hero p {
@@ -105,8 +108,8 @@
       position: relative;
     }
     .card.highlight {
-      border-color: rgba(212,175,55,0.4);
-      background: linear-gradient(145deg, #141c15, #0a0e0a);
+      border-color: #ffffff;
+      background: #181818;
     }
     .card-icon { font-size: 30px; margin-bottom: 12px; display: inline-block; }
     .card h3 { font-size: 19px; font-weight: 800; color: #fff; margin-bottom: 8px; }
@@ -153,7 +156,7 @@
     .slider-label { font-size: 13.5px; font-weight: 700; color: #fff; }
     .slider-val-badge {
       font-size: 18px; font-weight: 900; color: var(--gold);
-      background: rgba(212,175,55,0.12); padding: 4px 12px; border-radius: 8px; border: 1px solid rgba(212,175,55,0.3);
+      background: rgba(255, 255, 255, 0.15); padding: 4px 12px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.15);
     }
     input[type=range] {
       width: 100%; height: 8px; border-radius: 4px; background: #263327;
@@ -173,7 +176,7 @@
       text-align: center;
     }
     .res-card.green-border { border-color: var(--green); background: rgba(34,197,94,0.06); }
-    .res-card.gold-border { border-color: var(--gold); background: rgba(212,175,55,0.08); }
+    .res-card.gold-border { border-color: var(--gold); background: rgba(255, 255, 255, 0.15); }
     .res-label { font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.5px; font-weight: 700; }
     .res-num { font-size: 22px; font-weight: 900; color: #fff; margin: 4px 0; }
     .res-num.green { color: var(--green); }
@@ -184,7 +187,7 @@
     .pool-calc-box {
       margin-top: 28px;
       padding: 24px;
-      background: rgba(212,175,55,0.06);
+      background: rgba(255, 255, 255, 0.15);
       border: 1px dashed var(--gold);
       border-radius: 14px;
     }
@@ -208,7 +211,7 @@
     }
     td { padding: 15px 18px; border-bottom: 1px solid var(--border); font-size: 13px; }
     tr:last-child td { border-bottom: none; }
-    tr.highlight-row { background: rgba(212,175,55,0.05); }
+    tr.highlight-row { background: rgba(255, 255, 255, 0.15); }
 
     /* ── Affiliate Referral Model ── */
     .deal-box {
@@ -254,7 +257,7 @@
       color: var(--gold);
       text-align: center;
       padding: 8px 12px;
-      background: rgba(212,175,55,0.08);
+      background: rgba(255, 255, 255, 0.15);
       border-bottom: 1px solid var(--border);
       font-weight: 700;
     }
@@ -451,7 +454,7 @@
         <!-- Faturamento / motorista -->
         <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:14px;padding:16px;">
           <div style="font-size:12px;color:var(--muted);margin-bottom:6px;">Faturamento / Motorista / Mês:</div>
-          <select id="select-ticket" onchange="calculateModel()" style="width:100%;background:#162017;border:1px solid var(--border);color:#fff;padding:8px;border-radius:8px;font-size:14px;font-weight:700;outline:none;">
+          <select id="select-ticket" onchange="calculateModel()" style="width:100%;background:#1a1a1a;border:1px solid var(--border);color:#fff;padding:8px;border-radius:8px;font-size:14px;font-weight:700;outline:none;">
             <option value="200000">200.000 Kz (Conservador)</option>
             <option value="300000" selected>300.000 Kz (Padrão de Mercado)</option>
             <option value="450000">450.000 Kz (Alta Demanda)</option>
@@ -461,9 +464,9 @@
         <!-- Teto do Pool Fixo 25% -->
         <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:14px;padding:16px;display:flex;flex-direction:column;justify-content:center;">
           <div style="font-size:12px;color:var(--muted);margin-bottom:6px;">Teto Global do Pool de Lucro:</div>
-          <div style="background:#162017;border:1px solid var(--gold);color:var(--gold);padding:10px 14px;border-radius:8px;font-size:14px;font-weight:900;display:flex;justify-content:space-between;align-items:center;">
+          <div style="background:#1a1a1a;border:1px solid var(--gold);color:var(--gold);padding:10px 14px;border-radius:8px;font-size:14px;font-weight:900;display:flex;justify-content:space-between;align-items:center;">
             <span>25% Fixo para Parceiros</span>
-            <span style="font-size:11px;background:rgba(212,175,55,0.15);padding:2px 8px;border-radius:4px;color:#fff;">GIRO retém 75%</span>
+            <span style="font-size:11px;background:rgba(255, 255, 255, 0.15);padding:2px 8px;border-radius:4px;color:#fff;">GIRO retém 75%</span>
           </div>
           <input type="hidden" id="select-pool-pct" value="0.25">
         </div>
@@ -471,7 +474,7 @@
         <!-- Nº de Investidores / Parceiros -->
         <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:14px;padding:16px;">
           <div style="font-size:12px;color:var(--muted);margin-bottom:6px;">Nº de Parceiros / Investidores no Grupo:</div>
-          <select id="select-partners-count" onchange="calculateModel()" style="width:100%;background:#162017;border:1px solid var(--blue);color:var(--blue);padding:8px;border-radius:8px;font-size:14px;font-weight:700;outline:none;">
+          <select id="select-partners-count" onchange="calculateModel()" style="width:100%;background:#1a1a1a;border:1px solid var(--blue);color:var(--blue);padding:8px;border-radius:8px;font-size:14px;font-weight:700;outline:none;">
             <option value="1">1 Parceiro (100% do pool)</option>
             <option value="3">3 Parceiros</option>
             <option value="5">5 Parceiros</option>
